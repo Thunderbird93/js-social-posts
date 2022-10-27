@@ -59,8 +59,11 @@ const posts = [
 //
 const container = document.getElementById('container');
 
+function addPosts(){
+    })
+}
 
-
+addPosts();
 
 
 
