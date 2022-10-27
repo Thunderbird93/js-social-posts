@@ -58,6 +58,7 @@ const posts = [
 
 //
 const container = document.getElementById('container');
+addPosts();
 
 function addPosts(){
     let x = '';
@@ -71,7 +72,7 @@ function addPosts(){
         </div>
         <div class="post-meta__data">
         <div class="post-meta__author">${post.author.name}</div>
-        <div class="post-meta__time">${post.created}</div>
+        <div class="post-meta__time"> ${post.created.split("-").reverse().join("-")}</div> 
         </div>                    
         </div>
         </div>
@@ -95,11 +96,10 @@ function addPosts(){
         </div>
         `
     })
-    
+    //Riga75. Ho provato a creare una funzione separata, non ci riesco. L'ho inserito qui
     container.innerHTML = x;
 }
 
-addPosts();
 
 
 
