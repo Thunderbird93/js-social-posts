@@ -96,8 +96,8 @@ function addPosts(){
         </div>
         `
     })
-    //Riga75. Ho provato a creare una funzione separata, non ci riesco. L'ho inserito qui
     container.innerHTML = x;
+    //Riga75. Ho provato a creare una funzione separata, non ci riesco. L'ho inserito qui
 }
 
 
